@@ -69,11 +69,3 @@
 > "El Kit Digital te da una web estática y tarda meses entre papeleos. Lo que yo te monto
 > en 7 días es la web MÁS la agenda, los recordatorios y el rescate de llamadas — eso el
 > Kit no lo cubre. Y oye, si más adelante te sale el bono, lo usamos para otra cosa."
-
-## Nota RGPD (para hacerlo bien desde el día 1)
-
-- Llamar a teléfonos públicos de negocios ofreciendo servicios B2B es práctica estándar; si
-  el número es de un autónomo persona física, evita los inscritos en la Lista Robinson.
-- En el formulario de reserva del cliente final: checkbox de consentimiento para
-  comunicaciones. Los recordatorios de cita son mensajes de servicio (interés legítimo),
-  las campañas de marketing requieren el consentimiento del checkbox.

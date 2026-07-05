@@ -23,7 +23,7 @@ o, mínimo, permiso para mandar la demo por WhatsApp. Punto.
 > reciba al momento un WhatsApp automático con tu agenda para que reserve solo. Y de
 > paso, recordatorios automáticos para que no te dejen tirado con los no-shows.
 >
-> ¿Te pasa lo de las llamadas perdidas o lo tienes resuelto?
+> ¿Te pasa lo de las llamadas perdidas o que no asistan sin avisar?
 
 **→ La pregunta final es la clave: no pides nada, preguntas por SU problema.**
 
