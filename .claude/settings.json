@@ -40,7 +40,19 @@
       "Bash(python3 -c \"import openpyxl; print\\('openpyxl', openpyxl.__version__, 'OK'\\)\")",
       "Bash(xargs -r docker stop)",
       "Bash(python3 convert_to_xlsx.py)",
-      "Bash(claude --version)"
+      "Bash(claude --version)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\" https://gentlecan.es/ -o gentlecan.html -w \"HTTP %{http_code} · %{size_download} bytes\\\\n\")",
+      "Bash(grep -oiE \"background\\(-image\\)?:\\\\s*url\\\\\\(['\\\\\"]?data:image[^\\)]{0,60}\" gentlecan.html)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" \"https://gentlecan.es/peluqueria-canina-madrid/\" -o pelu.html -w \"peluqueria-canina-madrid → HTTP %{http_code} · %{size_download} bytes\\\\n\")",
+      "Bash(python3 -c \"import PIL; print\\('Pillow', PIL.__version__\\)\")",
+      "Bash(python3 recolor_trama.py)",
+      "Bash(python3 -)",
+      "Bash(cp /tmp/claude-1000/-home-jesperon-JTSolutions/83eab51f-2742-4326-be0f-b8c9bea1efb6/scratchpad/textura.jpg trama-original-azul.jpg)",
+      "Bash(python3 generar_trama.py 1A5A8C azul-gentlecan)",
+      "Bash(python3 generar_trama.py 7CBA3F verde)",
+      "Bash(rm -f trama-verde.jpg)",
+      "Bash(python3 -c \"print\\('---'\\)\")",
+      "Bash(awk '{print $5, $9}')"
     ]
   }
 }

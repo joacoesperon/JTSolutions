@@ -1,3 +1,37 @@
+# guia para pasar configuracion 
+
+cumplir a rrajatabla, se debe pasar exactamente como se indica aca, si no no es valido, no vale resumir, abreviar, nada, exacto como esta aca para cada elemento
+
+"---" esto indica cambio de elemento
+
+seccion
+name: nombre de la seccion
+sticky: No stickiness/Stick to top on scroll/ Stick to bottom on scroll
+Allow rows to take entire width: si/no
+
+background:
+color:
+{si es imagen:
+imagen: nombre de fichero
+image options: full center(parallax)/ full center/ fill 100% width/ fill 100% width & height/ no repeat / repeat / repeat horizontally
+background image opacity: none/light fade/ half fade/ heavy fade
+background blur: si / no}
+background blur: si / no
+
+width: full / wide / mid wide/ small
+
+styles:
+margen desktop: arriba derecha abajo izquierda
+padding desktop: arriba derecha abajo izquierda
+margen movil: arriba derecha abajo izquierda
+padding movil: arriba derecha abajo izquierda
+
+border:
+
+---
+
+
+
 # PLANTILLA — Tu MasKota Chula (web en GoHighLevel, calcada de gentlecan.es)
 
 Documento maestro. **Parte 1** = lo ya construido (estado actual). **Parte 2** = lo que
@@ -80,13 +114,14 @@ Content Position **Center** · Use Same layout for Mobile **sí** · margen 0 ·
 - color `#FFFFFF` · margen: abajo 36px (resto 0) · padding 0 · align center ·
   container size 650px · custom class `hero-texto`
 
-### 4) `hero-boton` — Button
+### 4) `hero-boton` — Button (**botón estándar** — idéntico a `cta-boton`)
 - contenido: `Reserva ya` · action: link → `#reservar`
-- tipografía: DM Sans · 17px desktop / 16px móvil · w600
-- color texto `#252525` · fondo `#fcb423`
-- border radius 8px · align center · padding botón 16px 40px desktop / 14px 32px móvil · margen 0
-- ⚠️ opcional para igualar 100% a gentlecan y al resto de botones: radius **10px**,
-  padding **20px 30px**, 18px w400
+- DM Sans · **18px** · **w400** · texto `#252525` · fondo `#fcb423`
+- border radius **10px** · padding botón **20px 30px** · align center · margen 0
+- hover: naranja un poco más claro
+- ℹ️ En gentlecan TODOS los botones son iguales. Este es el mismo que `cta-boton`,
+  `servicios-boton`, `ubi-boton` y `siguenos-boton`. Si ya lo montaste con 17px/w600/
+  radius 8px, cámbialo a estos valores.
 
 ---
 
@@ -180,35 +215,40 @@ la página; plantilla del código con URLs a reemplazar por cliente.)
 > Referencia gentlecan → nuestro: su naranja `#FF9C0D` → `#fcb423` · su verde `#00544D` →
 > `#7CBA3F` · su crema `#FFF7E5` → igual.
 > **Botón estándar de aquí en adelante (exacto de gentlecan):** fondo `#fcb423` · texto
-> `#252525` · DM Sans 18px w400 · border radius 10px · padding botón 20px 30px · hover un
-> poco más claro.
+> `#252525` · DM Sans 18px w400 · border radius 10px · padding botón 20px 30px ·
+> **hover fondo `#fcb423D9`** (naranja al ~85%). Todos los botones de la web son este.
 
 ## SECCIÓN cta  (va después de nosotros)
 
+> Todos los valores de abajo están **medidos del CSS real de gentlecan**. Único cambio vs
+> gentlecan: su banda usa una FOTO con capa oscura de fondo; nosotros ponemos la trama verde.
+
 **general settings**
 - element name: `cta` · sticky no · allow rows: no · width full
-- background: color `#7CBA3F` (+ textura transparente opcional, ver "TEXTURA" al final)
+- background: **Image** → `plantilla-assets/trama-verde.jpg` · opción de imagen **full center** ·
+  background image opacity **none** · blur **no** (= cover · center · no-repeat, sin color)
 
 **style settings**
-- margen 0 · padding desktop: arriba 40px · derecha 20px · abajo 40px · izquierda 20px ·
-  padding móvil: igual (40/20/40/20)
-- border/shadow none · custom class `cta`
+- margen 0 · **padding 0 en los 4 lados** (desktop y móvil) · border/shadow none · custom class `cta`
 
 **fila `cta-fila`**: align center · width 100% · margen/padding 0
-**columna `cta-col`**: CA Vertical · CS Center · CP Center · same mobile sí · margen/padding 0
+**columna `cta-col`** (⬅ acá va el aire vertical): CA Vertical · CS Center · CP Center ·
+same mobile sí · margen 0 · **padding: arriba 40px · derecha 20px · abajo 40px · izquierda 20px**
+(desktop y móvil)
 
 ### 1) `cta-titulo` — Headline → H2
 - contenido: `Es por eso por lo que, para muchos,` (salto de línea) `somos la mejor
   peluquería canina de Madrid.`
 - tipografía: custom font DM Serif Display · **45px** desktop / **35px** móvil · w400 ·
-  lh 1.11 desktop / 1.25 móvil · transform none · ls 0
+  **lh 50px desktop / 1.25em móvil** · transform none · ls 0
 - color `#FFFFFF` · margen abajo 50px (resto 0) · padding 0 · align center ·
-  container size 960px · custom class `cta-titulo`
+  custom class `cta-titulo` · (gentlecan NO le pone container/ancho máximo)
 
 ### 2) `cta-boton` — Button (botón estándar)
 - contenido: `Reserva ya` · link `#reservar`
-- DM Sans 18px w400 · texto `#252525` · fondo `#fcb423` · radius 10px · padding 20px 30px ·
-  align center · margen 0 (móvil: abajo 20px)
+- DM Sans **18px** w400 · texto `#252525` · fondo `#fcb423` *(gentlecan `#FF9C0D`)* ·
+  radius **10px** · padding **20px 30px** · align center · margen 0 (móvil: abajo 20px)
+- **hover fondo `#fcb423D9`** *(gentlecan `#FF9C0DD9` = naranja al ~85%)*
 
 ---
 
@@ -477,16 +517,25 @@ SVGs cuando queramos afinar.)
 
 ---
 
-## TEXTURA VERDE (opcional — lo que hace gentlecan)
+## TEXTURA (cómo lo hace gentlecan DE VERDAD)
 
-gentlecan usa una **imagen de textura** sobre el color (la misma en verde y en azul según
-la página). Para replicarlo escalable a cualquier color de cliente:
-1. Descargar una textura **PNG transparente** de transparenttextures.com (o patrón SVG con
-   color configurable de heropatterns.com).
-2. En cada sección/columna verde: background **color** `#7CBA3F` **+ background image** la
-   textura PNG (repeat). El color de abajo se ve a través → **un solo archivo sirve para
-   todos los colores**.
-3. Si el resultado no convence: color liso y listo.
+⚠️ **Corrección importante:** gentlecan NO usa una textura transparente sobre un color.
+Usa una **imagen JPG OPACA de cuadros escoceses (tartán)** como fondo completo de la
+sección, sin color debajo. Por eso no aparece ninguna "textura transparente": es una foto
+de tela a todo color.
+- La suya (azul): `Peluqueria-trama-escocesa-azul3.jpg` (2160×570, ~123 KB).
+- CSS que aplica: `background-image:url(...); background-position:center center;
+  background-repeat:no-repeat; background-size:cover;` · **sin background-color**.
+
+**Nuestra versión (verde de marca):** `plantilla-assets/trama-verde.jpg` — misma trama
+exacta recoloreada a verde (sombras verde oscuro → luces `#7CBA3F`). Generada con
+`plantilla-assets/recolor_trama.py` (sirve para recolorear a cualquier color de cliente).
+
+**Cómo ponerla en GHL** (misma receta para cta, ubicacion-txt-col, siguenos y footer):
+1. En el fondo de la sección/columna: **Background → Image** → subir `trama-verde.jpg`.
+2. Position **center** · Size **cover** (o "fill") · Repeat **no-repeat**.
+3. NO hace falta color de fondo: la imagen es opaca y cubre todo.
+4. Si en algún cliente no querés textura: fondo **color** liso `#7CBA3F` y listo.
 
 ---
 
