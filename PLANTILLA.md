@@ -246,8 +246,8 @@ trailing icon:
 styles:
 full width:fluid/fill width
 BG styles:custom/line flat
-vertical space:inherit/5/10/15/20/25/30/40/0px
-horizontal space:inherit/5/10/15/20/25/30/40/0px
+vertical space:inherit/5/10/15/20/25/30/40/0 "px"
+horizontal space:inherit/5/10/15/20/25/30/40/0 "px"
 
 margen desktop: arriba derecha abajo izquierda
 padding desktop: arriba derecha abajo izquierda
