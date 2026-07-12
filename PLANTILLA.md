@@ -4,18 +4,21 @@ cumplir a rrajatabla, se debe pasar exactamente como se indica aca, si no no es 
 
 "---" esto indica cambio de elemento
 
+---
+
 seccion
 name: nombre de la seccion
 sticky: No stickiness/Stick to top on scroll/ Stick to bottom on scroll
 Allow rows to take entire width: si/no
 
 background:
+{si es color
 color:
+}
 {si es imagen:
 imagen: nombre de fichero
 image options: full center(parallax)/ full center/ fill 100% width/ fill 100% width & height/ no repeat / repeat / repeat horizontally
-background image opacity: none/light fade/ half fade/ heavy fade
-background blur: si / no}
+background image opacity: none/light fade/ half fade/ heavy fade}
 background blur: si / no
 
 width: full / wide / mid wide/ small
@@ -26,11 +29,266 @@ padding desktop: arriba derecha abajo izquierda
 margen movil: arriba derecha abajo izquierda
 padding movil: arriba derecha abajo izquierda
 
+{si hay border
 border:
+border style: solid/dashed/dotted/double/inset/outset/groove/ridge
+color:
+border sides: arriba derecha abajo izquierda medida(px/em/rem/vh/vw)
+corner radius: arriba derecha abajo izquierda medida(px/%/em/rem/vh/vw)}
+{si no hay border
+sin borde}
+
+{si hay shadow
+shadow:
+outer/inner shadow
+x y Blur Spread "px"
+color:}
+{si no hay shadow
+sin shadow}
+
+visibility:
+desktop/movil/ambos
+
+custom class: 
+
+---
+
+fila
+name: nombre del elemento
+align: left/center/right
+width: valor px/%/em/rem/vh/vw
+
+background:
+{si es color
+color:}
+{si es imagen:
+imagen: nombre de fichero
+image options: full center(parallax)/ full center/ fill 100% width/ fill 100% width & height/ no repeat / repeat / repeat horizontally
+background image opacity: none/light fade/ half fade/ heavy fade}
+background blur: si / no
+
+styles:
+margen desktop: arriba derecha abajo izquierda
+padding desktop: arriba derecha abajo izquierda
+margen movil: arriba derecha abajo izquierda
+padding movil: arriba derecha abajo izquierda
+
+{si hay border
+border:
+border style: solid/dashed/dotted/double/inset/outset/groove/ridge
+color:
+border sides: arriba derecha abajo izquierda medida(px/em/rem/vh/vw)
+corner radius: arriba derecha abajo izquierda medida(px/%/em/rem/vh/vw)}
+{si no hay border
+sin borde}
+
+{si hay shadow
+shadow:
+outer/inner shadow
+x y Blur Spread "px"
+color:}
+{si no hay shadow
+sin shadow}
+
+visibility:
+desktop/movil/ambos
+
+custom class: 
+
+---
+
+columna
+name: nombre del elemento
+background:
+{si es color
+color:}
+{si es imagen:
+imagen: nombre de fichero
+image options: full center(parallax)/ full center/ fill 100% width/ fill 100% width & height/ no repeat / repeat / repeat horizontally
+background image opacity: none/light fade/ half fade/ heavy fade}
+background blur: si / no
+
+column layout:
+content alignment: vertical/horizontal
+content spacing: center/left/right/space around/space evenly/space between
+content position; default/start/end/center
+use same layout for mobile: si/no
+
+styles:
+margen desktop: arriba derecha abajo izquierda
+padding desktop: arriba derecha abajo izquierda
+margen movil: arriba derecha abajo izquierda
+padding movil: arriba derecha abajo izquierda
+
+{si hay border
+border:
+border style: solid/dashed/dotted/double/inset/outset/groove/ridge
+color:
+border sides: arriba derecha abajo izquierda medida(px/em/rem/vh/vw)
+corner radius: arriba derecha abajo izquierda medida(px/%/em/rem/vh/vw)}
+{si no hay border
+sin borde}
+
+{si hay shadow
+shadow:
+outer/inner shadow
+x y Blur Spread "px"
+color:}
+{si no hay shadow
+sin shadow}
+
+visibility:
+desktop/movil/ambos
+
+custom class: 
+
+---
+
+elementos de texto(headline/sub-headline/paragraph/bullet list/rich text)
+name: 
+
+content config:
+heading 1/2/3/4/5/6
+fuente: fuente
+tamaño: tamaño "px"
+negrita:si/no
+italica:si/no
+subrayado:si/no
+tachado:si/no
+link: link/no
+
+typography:
+fuente: 
+font size desktop: valor (px/%/em/rem/vh/vw)
+font size movil: valor (px/%/em/rem/vh/vw)
+font weight desktop: 100-900
+font weight movil: 100-900
+opacity: none/light fade/ half fade/heavy fade
+line height desktop: valor px/%/em/rem/vh/vw
+line height movil: valor px/%/em/rem/vh/vw
+text transform: normal/uppercase/lowercase/capitalize
+letter spacing:normal/1px/2px/3px/-1px
+
+color:
+background color:
+color:
+link text color:
+icon color:
+icon:
+
+styles:
+margen desktop: arriba derecha abajo izquierda
+padding desktop: arriba derecha abajo izquierda
+margen movil: arriba derecha abajo izquierda
+padding movil: arriba derecha abajo izquierda
+
+{si hay border
+border:
+border style: solid/dashed/dotted/double/inset/outset/groove/ridge
+color:
+border sides: arriba derecha abajo izquierda medida(px/em/rem/vh/vw)
+corner radius: arriba derecha abajo izquierda medida(px/%/em/rem/vh/vw)}
+{si no hay border
+sin borde}
+
+text align desktop: left/center/right/justify
+text align movil: left/center/right/justify
+
+{si hay shadow
+shadow:
+outer/inner shadow
+x y Blur Spread "px"
+color:}
+{si no hay shadow
+sin shadow}
+
+container size dekstop: width(px/%/em/rem/vh/vw/auto) height (px/%/em/rem/vh/vw/auto)
+container size movil: width (px/%/em/rem/vh/vw/auto) height (px/%/em/rem/vh/vw/auto)
+
+visibility:desktop/movil/ambos
+
+custom class: 
+
+animations:
+entrance animation: 
+
+---
+
+boton
+name:
+
+text:
+sub text:
+
+typography:
+fuente: 
+font size desktop: valor (px/%/em/rem/vh/vw)
+font size movil: valor (px/%/em/rem/vh/vw)
+font weight desktop: 100-900
+font weight movil: 100-900
+sub text font weight desktop: 100-900
+sub text font weight movil: 100-900
+letter spacing:normal/1px/2px/3px/-1px
+text transform: normal/uppercase/lowercase/capitalize
+
+link to:open popup/website url/download file/hide & show elements/scroll to element/go to page/go to next page/one click up-down sell product/call/sms/email adress/membership/add to cart/buy now/collections
+website/link/extra data:
+open in new tab:si/no
+
+color:
+background color:
+color:
+sub text color:
+icon color:
+leading icon:
+trailing icon: 
+
+styles:
+full width:fluid/fill width
+BG styles:custom/line flat
+vertical space:inherit/5/10/15/20/25/30/40/0px
+horizontal space:inherit/5/10/15/20/25/30/40/0px
+
+margen desktop: arriba derecha abajo izquierda
+padding desktop: arriba derecha abajo izquierda
+margen movil: arriba derecha abajo izquierda
+padding movil: arriba derecha abajo izquierda
+
+{si hay border
+border:
+border style: solid/dashed/dotted/double/inset/outset/groove/ridge
+color:
+border sides: arriba derecha abajo izquierda medida(px/em/rem/vh/vw)
+corner radius: arriba derecha abajo izquierda medida(px/%/em/rem/vh/vw)}
+{si no hay border
+sin borde}
+
+text align desktop: left/center/right/justify
+text align movil: left/center/right/justify
+
+{si hay shadow
+shadow:
+outer/inner shadow
+x y Blur Spread "px"
+color:}
+{si no hay shadow
+sin shadow}
+
+container size dekstop: width(px/%/em/rem/vh/vw/auto) height (px/%/em/rem/vh/vw/auto)
+container size movil: width (px/%/em/rem/vh/vw/auto) height (px/%/em/rem/vh/vw/auto)
+
+visibility:desktop/movil/ambos
+
+custom class: 
+
+entrance animation:
+hover animation:none/elevate/wobble
 
 ---
 
 
+
+---
 
 # PLANTILLA — Tu MasKota Chula (web en GoHighLevel, calcada de gentlecan.es)
 
